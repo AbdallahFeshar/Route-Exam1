@@ -1,0 +1,813 @@
+:root{
+    --main-color:#748182;
+}
+
+
+.main-color{
+    color:#748182 ;
+}
+.main-bground {
+    background-color: #eee;
+}
+.font-fam {
+    font-family: Montserrat;
+}
+.team-color-back {
+    background-color: #5B5B5B;
+}
+
+
+
+/**************** page protfolio  ********************/
+
+
+.page-protofo .works-tab .nav .nav-item .nav-link.active {
+    background-color: #fff;
+}
+
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body {
+    position: relative;
+}
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    /* top: 33px;
+    left: 27px; */
+    width: 83%;
+    height: 83%;
+    background-color: #fff;
+    opacity: 0;
+    transition: .5s opacity , .5s top    ;
+}
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body:hover .works-image .works-layer {
+        opacity: 100%;
+        top: 22px;
+} 
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer .layer-context2 p {
+    margin-bottom: 40px;
+    transition: .5s margin-bottom;
+}
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer:hover .layer-context2 p {
+    margin-bottom: 10px;
+}
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer .works-icon {
+    margin-top:15px ;
+    transition: .5s margin-top;
+
+}
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer:hover  .works-icon {
+    margin-top:10px
+}
+
+
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer .works-icon a {
+    text-decoration: none;
+}
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer .works-icon i {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color: black;
+    transition: .5s background-color , .5s color ,.5s border;
+}
+
+.page-protofo .works-tab .tab-content .tab-pane .words-body .works-image .works-layer .works-icon i:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px black solid;
+}
+
+/******************** End page work  *************************/
+
+
+
+
+
+/******************** Nav bar  *************************/
+
+
+
+
+
+#navId .nav-link{
+    position: relative;
+}
+
+#navId .nav-link::before{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+#navId .nav-link.active::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0px;
+}
+
+/******************** End Nav bar  *************************/
+
+
+
+
+
+.nav .nav-item .nav-link{
+    position: relative;
+}
+
+.nav .nav-item .nav-link::before{
+    content: "";
+    position:absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+.nav .nav-item .nav-link.active::before{
+    content: "";
+    position:absolute;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    left: 10px;
+    bottom: 0px;
+}
+
+
+
+
+
+/******************** page start  *************************/
+
+
+
+.page-1 {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("../imgs/bg.jpg") ;
+    background-size: cover;
+    background-position: center center;
+}
+.page-1 .contain h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.page-1 .contain .anim p {
+    font-size: 45px;
+}
+.page-1 .contain .icons {
+    width: 120%;
+}
+.page-1 .contain .icons a {
+    text-decoration: none;
+}
+.page-1 .contain .icons a i {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    background-color: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+} 
+
+/******************** End page start  *************************/
+
+/********************  animation  ***************/
+
+
+
+
+
+ 
+  .animation-home::before{
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    content: "";
+    left: 33%;
+    /* transform: translate(-50%); */
+    position: absolute;
+    top: 45%;
+
+    animation-name: type;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}  
+@keyframes type{
+0%{content: "I Am |";}
+1%{content: "I Am D|";}
+2%{content: "I Am De|";}
+3%{content: "I Am Dev|";}
+4%{content: "I Am Deve|";}
+5%{content: "I Am Devel|";}
+6%{content: "I Am Develo|";}
+7%{content: "I Am Develop|";}
+8%{content: "I Am Develope|";}
+10%{content: "I Am Developer|";}
+11%{content: "I Am Developer|";}
+12%{content: "I Am Developer|";}
+13%{content: "I Am Developer|";}
+14%{content: "I Am Developer|";}
+15%{content: "I Am Developer";}
+16%{content: "I Am Develope|";}
+17%{content: "I Am Develop|";}
+18%{content: "I Am Develo|";}
+19%{content: "I Am Devel|";}
+20%{content: "I Am Deve|";}
+21%{content: "I Am Dev|";}
+22%{content: "I Am De|";}
+23%{content: "I Am D|";}
+24%{content: "I Am|";}
+25%{content: "I Am D|";}
+26%{content: "I Am De|";}
+27%{content: "I Am Des|";}
+28%{content: "I Am Desi|";}
+29%{content: "I Am Desig|";}
+30%{content: "I Am Design|";}
+31%{content: "I Am Designe|";}
+32%{content: "I Am Designer|";}
+33%{content: "I Am Designer|";}
+34%{content: "I Am Designer|";}
+35%{content: "I Am Designer|";}
+36%{content: "I Am Designer|";}
+37%{content: "I Am Designe|";}
+38%{content: "I Am Design|";}
+39%{content: "I Am Desig|";}
+40%{content: "I Am Desi|";}
+41%{content: "I Am Des|";}
+42%{content: "I Am De|";}
+43%{content: "I Am D|";}
+44%{content: "I Am |";}
+45%{content: "I Am l|";}
+46%{content: "I Am la|";}
+47%{content: "I Am lar|";}
+48%{content: "I Am larr|";}
+49%{content: "I Am larry|";}
+50%{content: "I Am larry D|";}
+51%{content: "I Am larry Da|";}
+52%{content: "I Am larry Dan|";}
+53%{content: "I Am larry Dani|";}
+54%{content: "I Am larry Danie|";}
+55%{content: "I Am larry Daniel|";}
+56%{content: "I Am larry Daniels|";}
+57%{content: "I Am larry Daniels|";}
+58%{content: "I Am larry Daniels|";}
+59%{content: "I Am larry Daniel";}
+60%{content: "I Am larry Danie|";}
+61%{content: "I Am larry Dani|";}
+62%{content: "I Am larry Dan|";}
+63%{content: "I Am larry Da|";}
+64%{content: "I Am larry D|";}
+65%{content: "I Am larry |";}
+66%{content: "I Am larry|";}
+67%{content: "I Am larr|";}
+68%{content: "I Am lar|";}
+69%{content: "I Am la|";}
+70%{content: "I Am l|";}
+71%{content: "I Am |";}
+72%{content: "I Am |";}
+73%{content: "I Am|";}
+74%{content: "I Am |";}
+75%{content: "I Am |";}
+76%{content: "I Am |";}
+77%{content: "I Am |";}
+78%{content: "I Am |";}
+79%{content: "I Am |";}
+80%{content: "I Am |";}
+81%{content: "I Am |";}
+82%{content: "I Am |";}
+83%{content: "I Am |";}
+84%{content: "I Am |";}
+85%{content: "I Am |";}
+86%{content: "I Am |";}
+87%{content: "I Am |";}
+88%{content: "I Am |";}
+89%{content: "I Am |";}
+90%{content: "I Am |";}
+91%{content: "I Am |";}
+92%{content: "I Am |";}
+93%{content: "I Am |";}
+94%{content: "I Am |";}
+95%{content: "I Am |";}
+96%{content: "I Am |";}
+97%{content: "I Am |";}
+98%{content: "I Am |";}
+99%{content: "I Am |";}
+100%{content: "I Am |";}
+} 
+
+
+
+
+/******************** End  animation  ***************/
+
+
+
+
+
+
+
+
+
+/**************** page about ********************/
+
+#About .main .main-contain .main-img .back-dot {
+    position: absolute;
+    background-image: url("../imgs/dots.png");
+    background-repeat: repeat;
+    width: 80%;
+    height: 400px;
+    /* bottom: 0px; */
+    left: 0px;
+    top: 10px;
+    z-index: -9999 !important;
+
+   
+}
+
+
+
+.main .main-contain .main-img img{
+    width: 100%;
+  
+}
+.main .main-contain .main-img {
+    position: relative;
+
+}
+
+.main .main-contain .about .cont-web .pre-web {
+    width: 100%;
+    background-color: #eee;
+}
+
+.main .main-contain .about .cont-web .pre-web .web {
+    width: 95%;
+    background-color: #000;
+    color: #fff;
+}
+
+.main .main-contain .about .cont-web .pre-web .web span {
+    margin-left:70%;
+}
+.main .main-contain .about .cont-brend .pre-brend .brend  span {
+    margin-left:71%;
+}
+.main .main-contain .about .cont-devolp .pre-devolp .devolp span {
+    margin-left:68%;
+}
+
+.main .main-contain .about .cont-brend .pre-brend {
+    width: 100%;
+    background-color: #eee;
+}
+
+.main .main-contain .about .cont-brend .pre-brend .brend {
+    width: 80%;
+    background-color: #000;
+    color: #fff;
+}
+
+.main .main-contain .about .cont-devolp .pre-devolp {
+    width: 100%;
+    background-color: #eee;
+}
+
+.main .main-contain .about .cont-devolp .pre-devolp .devolp {
+    width: 90%;
+    background-color: #000;
+    color: #fff;
+}
+
+.main .main-contain .about .buton .down {
+    padding: 8px 30px;
+    border-style: none;
+    background-color: #000;
+    color: #fff;
+    transition: .5s background-color , .5s color , .5s border;
+}
+.main .main-contain .about .buton .down:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+
+}
+
+
+
+.main .main-contain .about .buton a .cont {
+    padding: 8px 30px;
+    border: solid 1px #000;
+    background-color:#fff;  
+    color: var(--main-color);
+    transition: .5s background-color , .5s color , .5s border;
+
+}
+
+.main .main-contain .about .buton a .cont:hover {
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #000;
+}
+
+/******************** End page about  *************************/
+
+
+
+/******************** page service  *************************/
+
+.page-3 .contain h2 {
+  
+    font-size: 50px;
+}
+
+.page-3 .count .main .main-web .web .main-ico i {
+    width: 70px;
+    height: 70px;
+    background-color: #eee;
+    font-size: 30px;
+    transition: .5s background-color , .5s color ;
+}
+.page-3 .count .main .main-web:hover .web .main-ico i {
+    background-color: black;
+    color: #fff;
+}  
+
+/******************** End page service  *************************/
+
+
+/******************** page slider  *************************/
+
+
+
+
+
+#Testimonial .clint-img img {
+width: 100px;
+
+}
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #869791;
+}
+
+
+
+/******************** End page Slider  *************************/
+
+
+
+
+
+/******************** page team  *************************/
+.page-team .head-team h2 {
+
+    font-size: 50px;
+}
+
+.page-team .body-team .team .first-of-team .img-team .im-tem .img-of-team {
+transition: 1s transform;
+}
+
+
+.page-team .body-team .team .first-of-team .img-team .im-tem:hover .img-of-team {
+    transform: scale(1.2 , 1.2);
+}
+
+.page-team .body-team .team .first-of-team .img-team .im-tem .layer .layer-icon a {
+    text-decoration: none;
+
+}
+
+
+
+.page-team .body-team .team .first-of-team .img-team .im-tem .layer .layer-icon i {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    font-size: 10px;
+    transition: .2s background-color , .2s color , .2 border;
+}
+.page-team .body-team .team .first-of-team .img-team .im-tem .layer .layer-icon i:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+} 
+
+
+.page-team .body-team .team .first-of-team .img-team .im-tem {
+    position: relative;
+
+}
+
+.page-team .body-team .team .first-of-team .img-team .im-tem .layer {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    top: 28%;
+    left: 28%;
+    background-color:rgba(255, 255, 255, .9);
+    opacity: 0;
+    transform:rotatey(180deg);
+    transition: .5s transform ,.5s  opacity ;
+}
+.page-team .body-team .team .first-of-team:hover .img-team .im-tem .layer {
+    transform:rotatey(360deg) scale( 2.1 , 2.1);
+    opacity: 100%;
+    /* width: 95%;
+    height: 95%;
+    top: 10px;
+    left: 10px; */
+    cursor: pointer;
+}
+/******************** End page team  *************************/
+
+
+
+
+
+/******************** page contact  *************************/
+.page-contact .head-contact h2 {
+
+    font-size: 50px;
+
+}
+.page-contact .body-contact .row-contact .contact .icon-contact i {
+    width: 70px;
+    height: 70px;
+    background-color:#eee;
+    font-size: 30px;
+    transition: .5s background-color , .5s color ;
+}
+.page-contact .body-contact .row-contact .contact:hover  .icon-contact i {
+    background-color: black;
+    color: #fff;
+}
+
+
+.page-contact .body-contact form input{
+    border-style: none;
+}
+
+
+.page-contact .body-contact form textarea {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+}
+.page-contact .body-contact form button {
+    border-style: none;
+    background-color: #000;
+    color: var(--main-color);
+    padding: 10px 50px;
+    transition: .5s background-color , .5s color;
+
+}
+.page-contact .body-contact form button:hover {
+    background-color: #fff;
+    color: #000;
+}
+/******************** End page contact  *************************/
+
+
+
+
+
+
+
+
+
+#Contact .head-contact .all-sechead{
+    position: relative;
+    z-index: 1 !important;
+
+}
+#Contact .head-contact  .all-sechead::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../imgs/dots.png"); 
+    background-repeat: repeat;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: -0.2rem;
+    z-index: -1 !important;
+
+}
+
+
+#Team .head-team .all-sechead{
+    position: relative;
+    z-index: 1 !important;
+
+}
+#Team .head-team .all-sechead::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../imgs/dots.png"); 
+    background-repeat: repeat;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: -0.2rem;
+    z-index: -1 !important;
+
+    
+}
+
+
+
+#Works .works-head .all-sechead{
+    font-size: 50px;
+    position: relative;
+    z-index: 1 !important;
+
+}
+#Works .works-head .all-sechead::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../imgs/dots.png"); 
+    background-repeat: repeat;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: -0.2rem;
+    z-index: -1 !important;
+
+}
+
+
+#Service .contain .all-sechead{
+    position: relative;
+    z-index: 1 !important;
+
+}
+#Service .contain  .all-sechead::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../imgs/dots.png"); 
+    background-repeat: repeat;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: -0.2rem;
+    z-index: -1 !important;
+
+}
+
+
+#Testimonial .Testimonial-head .all-sechead{
+    position: relative;
+    z-index: 1 !important;
+    font-size: 50px;
+}
+#Testimonial .Testimonial-head .all-sechead::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../imgs/dots.png"); 
+    background-repeat: repeat;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: -0.2rem;
+    z-index: -1 !important;
+
+}
+
+
+
+
+#About .main .main-contain  .all-sechead{
+    position: relative;
+    z-index: 1 !important;
+    font-size: 35px;
+}
+#About .main .main-contain  .all-sechead::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url("../imgs/dots.png"); 
+    background-repeat: repeat;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    bottom: -0.2rem;
+    z-index: -1 !important;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    #About .main .main-contain .main-img .back-dot {
+        position: absolute;
+        background-image: url("../imgs/dots.png");
+        background-repeat: repeat;
+        width: 80%;
+        height: 97%;
+        /* bottom: 0px; */
+        left: 0px;
+        top: 10px;
+        z-index: -9999 !important;
+    
+       
+    }
+    
+    
+    
+    .main .main-contain .main-img img{
+        width: 100%;
+      
+    }
+    .main .main-contain .main-img {
+        position: relative;
+    
+    }
+
+}
+@media screen and (max-width:768px) {
+    #About .main .main-contain .main-img .back-dot {
+        position: absolute;
+        background-image: url("../imgs/dots.png");
+        background-repeat: repeat;
+        width: 80%;
+        height: 97%;
+        /* bottom: 0px; */
+        left: 0px;
+        top: 10px;
+        z-index: -9999 !important;
+    
+       
+    }
+    
+    
+    
+    .main .main-contain .main-img img{
+        width: 100%;
+      
+    }
+    .main .main-contain .main-img {
+        position: relative;
+    
+    }
+
+}
+@media screen and (max-width:600px) {
+    #About .main .main-contain .main-img .back-dot {
+        position: absolute;
+        background-image: url("../imgs/dots.png");
+        background-repeat: repeat;
+        width: 80%;
+        height: 97%;
+        /* bottom: 0px; */
+        left: 0px;
+        top: 10px;
+        z-index: -9999 !important;
+    
+       
+    }
+    
+    
+    
+    .main .main-contain .main-img img{
+        width: 100%;
+      
+    }
+    .main .main-contain .main-img {
+        position: relative;
+    
+    }
+
+}
